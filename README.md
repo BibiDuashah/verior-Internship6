@@ -1,1 +1,1 @@
-# verior-Internship6
+# verior-Internship Task 6
