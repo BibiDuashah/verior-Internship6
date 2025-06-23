@@ -1,0 +1,123 @@
+:root {
+      --primary-bg: #edf6f9;
+      --accent: #3a86ff;
+      --card-bg: #ffffff;
+      --text: #023047;
+      --light-shadow: rgba(58, 134, 255, 0.1);
+      --hover-bg: #d0ebff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #a8dadc, #f1faee);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 480px;
+      background: var(--card-bg);
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px var(--light-shadow);
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: var(--accent);
+    }
+
+    .search-section {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+
+    .search-section input,
+    .search-section button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .search-section input {
+      border: 2px solid #ddd;
+    }
+
+    .search-section button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      padding: 20px;
+      background: #fefefe;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(58, 134, 255, 0.07);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 20px;
+      color: var(--accent);
+    }
+
+    .weather-icon {
+      width: 64px;
+      height: 64px;
+    }
+
+    ul.user-list {
+      list-style: none;
+      padding-left: 0;
+      max-height: 300px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    ul.user-list li {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: #e0f7fa;
+      border: 1px solid #b2ebf2;
+      padding: 14px 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 136, 204, 0.1);
+      transition: all 0.4s ease;
+      cursor: pointer;
+      font-size: 15px;
+      color: #01579b;
+    }
+
+    ul.user-list li:hover {
+      background: #d0f0ff;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 8px 16px rgba(0, 132, 255, 0.2);
+      border-left: 5px solid #2196f3;
+    }

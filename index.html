@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>ClimaCast ☁️</h1>
+    </header>
+    <div class="search-section">
+      <input type="text" id="cityInput" placeholder="Enter city...">
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div class="cards">
+      <div class="card" id="weatherResult">
+        <h2>Weather Details</h2>
+        <p>Search a city to see weather info.</p>
+      </div>
+      <div class="card" id="userResult">
+        <h2>Users</h2>
+        <button onclick="fetchUsers()">Load Users</button>
+        <ul class="user-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
